@@ -1,10 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Test</title>
+  <meta charset="UTF-8">
+  <title>Happy 30th Birthday 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f0f14;
+      color: white;
+      text-align: center;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(135deg, #1f1f2e, #14141c);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border-radius: 25px;
+      background: #4ade80;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #22c55e;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .voucher {
+      background: #1a1a24;
+      padding: 40px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 30px;
+    }
+
+    .code {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      background: black;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-top: 15px;
+      display: inline-block;
+    }
+
+    footer {
+      padding: 40px;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-<body style="background:black; color:white; text-align:center; padding-top:100px; font-family:sans-serif;">
-  <h1>It Works 🎉</h1>
-  <p>If you see this styled, GitHub Pages is rendering properly.</p>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Happy 30th Birthday</h1>
+    <h2>To my favorite TV writer 🎬</h2>
+    <p>
+      30 years of brilliance, creativity, and making everyone around you better.
+      I couldn’t be prouder to call you my brother.
+    </p>
+    <a href="#message" class="btn">Scroll for your gift ↓</a>
+  </section>
+
+  <!-- MESSAGE -->
+  <section id="message">
+    <h2>A Note For You</h2>
+    <p>
+      You've always had a way of seeing the world differently — 
+      finding the story where others just see noise.
+      Watching you build your life in LA, chase your craft,
+      and grow into who you are today has been incredible.
+    </p>
+
+    <p>
+      30 isn't about getting older — it's about stepping fully into
+      your next chapter. And I know it's going to be your best one yet.
+    </p>
+
+    <p>
+      So here’s something to help you create another unforgettable memory.
+    </p>
+  </section>
+
+  <!-- PHOTOS -->
+  <section>
+    <h2>Some of Our Greatest Hits 📸</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Us Photo 1">
+      <img src="photo2.jpg" alt="Us Photo 2">
+      <img src="photo3.jpg" alt="Us Photo 3">
+    </div>
+  </section>
+
+  <!-- VOUCHER -->
+  <section>
+    <h2>Your 30th Birthday Experience 🎁</h2>
+
+    <div class="voucher">
+      <p>
+        Redeem your Tinggly Experience Box below and choose something epic.
+      </p>
+
+      <div class="code">
+        VOUCHER-CODE-HERE
+      </div>
+
+      <p style="margin-top:15px;">
+        Redeem at: https://www.tingly.com/redeem
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    Made with love by your brother ❤️
+  </footer>
+
 </body>
 </html>
